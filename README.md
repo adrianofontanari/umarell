@@ -1,9 +1,8 @@
 # Umarell 👴🏗️
 
-[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/fontanariadriano.umarell?label=VS%20Marketplace&color=d97f2e)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/fontanariadriano.umarell?color=blue)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/fontanariadriano.umarell?color=green)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/fontanariadriano.umarell)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell&ssr=false#review-details)
+[![VS Marketplace](https://img.shields.io/badge/VS_Marketplace-v0.1.0-d97f2e?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
+[![Install](https://img.shields.io/badge/install-from_VS_Marketplace-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
+[![Built with Claude](https://img.shields.io/badge/built_with-Claude_Opus-7a5af5)](https://www.anthropic.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > _An **umarell** is that retired Italian old man who spends his days watching construction sites, hands behind his back, commenting with an air of technical superiority._
