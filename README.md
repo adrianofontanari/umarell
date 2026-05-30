@@ -4,6 +4,11 @@
 >
 > _L'**umarell** è quel vecchietto italiano in pensione che passa le giornate a osservare i cantieri, mani dietro la schiena, commentando con aria di superiorità tecnica._
 
+![Umarell in action — VS Code sidebar](media/example-screen.png)
+<sub>👴 The umarell watches Marconi Express (Bologna) by night while Claude builds the AGI in the terminal.</sub>
+
+---
+
 ![Milano — Porta Genova](media/milano-porta-genova.jpeg)
 <sub>📍 Ph. Adriano — Milano, Porta Genova</sub>
 
