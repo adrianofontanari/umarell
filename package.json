@@ -3,7 +3,7 @@
   "displayName": "Umarell",
   "description": "The old Italian man who watches construction sites while you code. Live construction webcams in your VS Code sidebar with random comments. / Il vecchietto italiano che guarda i cantieri mentre programmi. Webcam di cantieri live nella sidebar di VS Code, con commenti random.",
   "version": "0.1.0",
-  "publisher": "adrianofontanari",
+  "publisher": "fontanariadriano",
   "icon": "media/icon.png",
   "homepage": "https://github.com/adrianofontanari/umarell",
   "bugs": {
