@@ -4,10 +4,21 @@
   "description": "The old Italian man who watches construction sites while you code. Live construction webcams in your VS Code sidebar with random comments. / Il vecchietto italiano che guarda i cantieri mentre programmi. Webcam di cantieri live nella sidebar di VS Code, con commenti random.",
   "version": "0.1.0",
   "publisher": "adrianofontanari",
+  "icon": "media/icon.png",
+  "homepage": "https://github.com/adrianofontanari/umarell",
+  "bugs": {
+    "url": "https://github.com/adrianofontanari/umarell/issues"
+  },
+  "galleryBanner": {
+    "color": "#d97f2e",
+    "theme": "dark"
+  },
+  "qna": "marketplace",
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
+    "Visualization",
     "Other"
   ],
   "keywords": [
@@ -16,7 +27,9 @@
     "webcam",
     "cantiere",
     "fun",
-    "italian"
+    "italian",
+    "claude",
+    "vibe-coding"
   ],
   "main": "./src/extension.js",
   "activationEvents": [
@@ -87,9 +100,15 @@
           "items": {
             "type": "object",
             "properties": {
-              "id": { "type": "string" },
-              "name": { "type": "string" },
-              "url": { "type": "string" }
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              }
             }
           }
         },
@@ -100,7 +119,12 @@
         },
         "umarell.commentLanguage": {
           "type": "string",
-          "enum": ["auto", "en", "it", "both"],
+          "enum": [
+            "auto",
+            "en",
+            "it",
+            "both"
+          ],
           "default": "auto",
           "description": "Language for comments. 'auto' follows VS Code locale. 'both' shows EN and IT together. / Lingua dei commenti. 'auto' segue la lingua di VS Code. 'both' mostra EN e IT insieme."
         },
@@ -136,11 +160,11 @@
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.0.0"
+    "@vscode/vsce": "^3.9.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adrianofontanari/umarell"
+    "url": "https://github.com/adrianofontanari/umarell.git"
   },
   "license": "MIT"
 }
