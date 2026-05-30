@@ -1,5 +1,11 @@
 # Umarell 👴🏗️
 
+[![Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/fontanariadriano.umarell?label=VS%20Marketplace&color=d97f2e)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/fontanariadriano.umarell?color=blue)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/fontanariadriano.umarell?color=green)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/fontanariadriano.umarell)](https://marketplace.visualstudio.com/items?itemName=fontanariadriano.umarell&ssr=false#review-details)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 > _An **umarell** is that retired Italian old man who spends his days watching construction sites, hands behind his back, commenting with an air of technical superiority._
 >
 > _L'**umarell** è quel vecchietto italiano in pensione che passa le giornate a osservare i cantieri, mani dietro la schiena, commentando con aria di superiorità tecnica._
