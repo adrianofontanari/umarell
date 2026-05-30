@@ -1,0 +1,146 @@
+{
+  "name": "umarell",
+  "displayName": "Umarell",
+  "description": "The old Italian man who watches construction sites while you code. Live construction webcams in your VS Code sidebar with random comments. / Il vecchietto italiano che guarda i cantieri mentre programmi. Webcam di cantieri live nella sidebar di VS Code, con commenti random.",
+  "version": "0.1.0",
+  "publisher": "adrianofontanari",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "umarell",
+    "construction",
+    "webcam",
+    "cantiere",
+    "fun",
+    "italian"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "umarell",
+          "title": "Umarell",
+          "icon": "media/icon-activitybar.svg"
+        }
+      ]
+    },
+    "views": {
+      "umarell": [
+        {
+          "id": "umarell.view",
+          "name": "Site / Cantiere",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "umarell.pickCamera",
+        "title": "Umarell: Pick site / Scegli cantiere",
+        "category": "Umarell"
+      },
+      {
+        "command": "umarell.refresh",
+        "title": "Umarell: Refresh now / Aggiorna ora",
+        "category": "Umarell"
+      },
+      {
+        "command": "umarell.addCustomCamera",
+        "title": "Umarell: Add custom webcam / Aggiungi webcam personalizzata",
+        "category": "Umarell"
+      }
+    ],
+    "configuration": {
+      "title": "Umarell",
+      "properties": {
+        "umarell.selectedCamera": {
+          "type": "string",
+          "default": "val-trompia",
+          "description": "Selected construction site ID. / ID del cantiere selezionato."
+        },
+        "umarell.refreshIntervalSeconds": {
+          "type": "number",
+          "default": 30,
+          "minimum": 5,
+          "maximum": 3600,
+          "description": "Image refresh interval (seconds). / Intervallo di aggiornamento dell'immagine (secondi)."
+        },
+        "umarell.commentIntervalSeconds": {
+          "type": "number",
+          "default": 25,
+          "minimum": 5,
+          "maximum": 600,
+          "description": "How often the old man mutters something (seconds). / Ogni quanto l'umarell borbotta qualcosa (secondi)."
+        },
+        "umarell.customCameras": {
+          "type": "array",
+          "default": [],
+          "description": "User-defined custom webcams. / Webcam personalizzate aggiunte dall'utente.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "url": { "type": "string" }
+            }
+          }
+        },
+        "umarell.showComments": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the old man's mutterings. / Mostra i borbottii dell'umarell."
+        },
+        "umarell.commentLanguage": {
+          "type": "string",
+          "enum": ["auto", "en", "it", "both"],
+          "default": "auto",
+          "description": "Language for comments. 'auto' follows VS Code locale. 'both' shows EN and IT together. / Lingua dei commenti. 'auto' segue la lingua di VS Code. 'both' mostra EN e IT insieme."
+        },
+        "umarell.eveningModeEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "In the evening, show a construction GIF instead of the photo. / La sera mostra una GIF di cantiere al posto della foto."
+        },
+        "umarell.eveningHourStart": {
+          "type": "number",
+          "default": 19,
+          "minimum": 0,
+          "maximum": 23,
+          "description": "Hour when evening mode starts (0–23). / Ora di inizio modalità sera (0–23)."
+        },
+        "umarell.eveningHourEnd": {
+          "type": "number",
+          "default": 6,
+          "minimum": 0,
+          "maximum": 23,
+          "description": "Hour when evening mode ends (0–23). / Ora di fine modalità sera (0–23)."
+        },
+        "umarell.eveningGifUrl": {
+          "type": "string",
+          "default": "https://media.tenor.com/npA1RjkXlTwAAAAM/bauarbeiter-mvg.gif",
+          "description": "GIF URL shown during evening mode. / URL della GIF mostrata in modalità sera."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianofontanari/umarell"
+  },
+  "license": "MIT"
+}
